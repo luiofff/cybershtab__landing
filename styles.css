@@ -453,6 +453,8 @@
 
 /* five block-------------------------------------------------------------- */
 
+
+
 .five_block__preTitle {
     font-family: var(--Onest-font);
     font-size: 2rem;
@@ -463,80 +465,273 @@
 
 
 
-.five_block__rightSide_InputsSpace {
-    width: 50%;
+.five_block__Side_InputsSpace {
+    width: 70%;
 
     display: flex;
     flex-direction: column;
 
     gap: 2rem;
-
-    padding-left: 8rem;
 }
 
 .five_block__input::placeholder {
     color: var(--main-dark-red);
 
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+
+    font-family: var(--ibm-font);
 }
 
+.five_block__input {
+    width: 100%;
+    color: var(--main-bright-red);
+
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    font-family: var(--ibm-font);
+
+}
+
+.five_block__inputComponent_undeline {
+    width: 100%;
+    height: 2px;
+
+    background: var(--main-dark-red);
+}
+
+
 .five_block__inputBlock {
+    width: 90%;
+
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
 
-.five_block__input-container {
+.five_block__checkBoxForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.input[type="checkbox"] {
+    display: none;
+}
+  
+  
+
+.custom-checkbox {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid var(--main-dark-red);
+
     position: relative;
-
-    width: 290px;
-  }
-  
-  .five_block__input-container input[type="text"] {
-    font-size: 20px;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid var(--main-dark-red);
-    padding: 5px 0;
-    background-color: transparent;
-    outline: none;
-  }
+    cursor: pointer;
+}
   
 
-  
-
-  
-  .five_block__input-container .five_block__underline {
+.custom-checkbox::after {
+    content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: .6rem;
+    height: .6rem;
+    background-color: var(--main-bright-red);
+
+    opacity: 0;
+}
+
+
+
+.input[type="checkbox"]:checked + .custom-checkbox::after {
+    opacity: 1;
+}
+
+.five_block__checkBox_label {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.five_block__textCheckBox {
+    font-family: var(--ibm-font);
+    color: var(--main-dark-red);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+.input[type="checkbox"]:checked > .five_block__textCheckBox  {
+    color: var(--main-bright-red);
+}
+
+.five_block__form {
+    gap: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 0 4rem;
+
+
+}
+
+#five_block__firstGridComponent {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    order: 1;
+}
+
+#five_block__secondGridComponent {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    order: 1;
+}
+
+#five_block__thirdGridComponent {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    order: 1;
+}
+
+
+.five_block__buttonBlock {
     width: 100%;
-    background-color: var();
-    transform: scaleX(0);
-    transition: all 0.3s ease;
-  }
-  
-  .five_block__input-container input[type="text"]:focus ~ .five_block__underline,
-  .five_block__input-container input[type="text"]:valid ~ .five_block__underline {
-    transform: scaleX(1);
-  }
+
+    display: grid;
+    place-items: center;
+
+    height: 20vh;
+}
+
+.five_block__button {
+    background: var(--main-bright-red);
+    color: #111;
+    font-size: 1.7rem;
+    font-family: var(--ibm-font);
+    font-weight: bolder;
+    width: 14rem;
+    height: 5rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 15%, 100% 85%, 100% 100%, 9.8% 100%, 0% 74.5%, 0% 15%);
+
+    border: none;
+}
+
+
+.five_block__button:hover {
+    background-color: var(--main-dark-red);
+}
 
 @media screen and (max-width:780px)  {
+    .five_block__form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #five_block__firstGridComponent {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+        order: auto;
+    }
+
+    #five_block__secondGridComponent {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+        order: auto;
+    }
+
+    #five_block__thirdGridComponent {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+        order: auto;
+    }
+
     .five_block__preTitle {
         font-size: 1.6rem;
     }
 
+
+
+    
+    .five_block__inputBlock {
+        width: 250px;
+    }
+
+ 
+
+    .five_block__form {
+        flex-direction: column;
+
+        padding: 0 4rem;
+
+        gap: 2rem;
+
+        align-items: center;
+    }
+
     @media screen and (max-width: 500px) {
+
         .five_block__preTitle {
             font-size: 1.4rem;
         }
 
-      
+        .five_block__inputBloc {
+            width: 200px;
+        }
 
+        .five_block__input-container {
+            position: relative;
+        
+            width: 200px;
+        }
+        .custom-checkbox {
+            width: .7rem;
+            height: .7rem;
+        }
+          
+        
+        .custom-checkbox::after {
+            width: .4rem;
+            height: .4rem;
+        }
+        .five_block__textCheckBox {
+            font-size: 1.1rem;
+        }
+
+        .five_block__form {
+            flex-direction: column;
+
+      
+    
+            gap: 2rem;
+    
+            align-items: center;
+        }
+        
+       
     }
 }
 
 /* five block-------------------------------------------------------------- */
+
+

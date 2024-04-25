@@ -1,140 +1,4 @@
-/* burger menu ------------------------------------------------------------ */
 
-.burger {
-    position: relative;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    cursor: pointer;
-    display: block;
-}
-  
-.burger input {
-    display: none;
-}
-  
-.burger span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: var(--main-bright-red);
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-}
-  
-.burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-}
-  
-.burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-}
-  
-.burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-}
-  
-.burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
-}
-  
-.burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-}
-  
-.burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
-}
-
-
-/* burger menu ------------------------------------------------------------ */
-
-
-.navbar {
-    width: 100%;
-    height: 10vh;
-    
-
-
-    display: flex;
-    justify-content: space-between;
-
-    align-items: center;
-}
-
-.navbar__block {
-    width: calc(100%/3);
-
-    display: flex;
-}
-
-.navbar__block:nth-child(1) {
-    justify-content: start;
-    padding-left: 4rem;
-}
-
-.navbar__block:nth-child(2) {
-    justify-content: center;
-}
-
-.navbar__block:nth-child(3) {
-    justify-content: end;
-    padding-right: 4rem;
-}
-
-.login_btn {
-    font-family: var(--ibm-font);
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 20.8px;
-    letter-spacing: -0.03em;
-    text-align: center;
-    color: var(--main-bright-red);
-
-    transition: .5s;
-
-    text-decoration: none;
-}
-
-.login_btn:hover {
-    color: var(--main-dark-red);
-}
-
-@media screen  and (max-width:550px){
-    .login_btn {
-        display: none;
-    }
-
-    .navbar__block:nth-child(1) {
-        justify-content: start;
-        padding-left: 4rem;
-    }
-    
-    .navbar__block:nth-child(2) {
-        justify-content: end;
-        padding-right: 4rem;
-    }
-
-    .navbar__block:nth-child(3) {
-        display: none;
-    }
-}
-
-/* navbar----------------------------------------------------- */
 
 /* lines ------------------------------------------------ */
 
@@ -383,7 +247,9 @@
         .third_block__cardPreTitle {
             font-size: .7rem;
         }
-
+        .third_block__card {
+            padding: 4rem 2rem;
+        }
       
 
     }
@@ -682,7 +548,7 @@
     .five_block__form {
         flex-direction: column;
 
-        padding: 0 4rem;
+        padding: 0 2rem;
 
         gap: 2rem;
 

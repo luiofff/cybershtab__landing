@@ -60,6 +60,16 @@ input {
   all: unset;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;  
+}
+body::-webkit-scrollbar-track {
+  background: #150712;       
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--main-bright-red);    
+}
+
 .hero {
     width: 100%;
 }

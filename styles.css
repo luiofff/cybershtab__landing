@@ -293,14 +293,7 @@
     width: 100%;
 }
 
-.third_block__textBlock {
-    width: 100%;
 
-    display: grid;
-    place-items: center;
-
-    height: 8vh;
-}
 
 .third_block__title {
     width: 40%;
@@ -377,6 +370,23 @@
         width: 85%;
     }
     
+    .lastBtn__href {
+    
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        .third_block__cardTitle {
+            font-size: 1rem;
+        }
+
+        .third_block__cardPreTitle {
+            font-size: .7rem;
+        }
+
+      
+
+    }
 }
 
 /* third block----------------------------------------------------- */
@@ -385,14 +395,13 @@
 /* four block-------------------------------------------------------------- */
 
 .four_block__listSpace {
-    height: 60vh;
+
 
     display: flex;
     flex-direction: column;
 
     gap: 2rem;
 
-    width: 100%;
     padding: 0 8rem;
 }
 
@@ -419,7 +428,23 @@
     font-weight: 400;
     font-size: 1.8rem;
 
-    width: 100%;
+    width: 80%;
+}
+
+.four_block__listElem:hover {
+    box-shadow: inset 1px 1px 100px 2px #630215;
+}
+
+@media screen and (max-width:780px)  {
+    .four_block__listElem_newsTitle {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .four_block__listSpace {
+        padding: 0 4rem;
+    }
+    
 }
 
 /* four block-------------------------------------------------------------four
@@ -431,8 +456,87 @@
 .five_block__preTitle {
     font-family: var(--Onest-font);
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--main-bright-red);
+}
+
+
+
+
+.five_block__rightSide_InputsSpace {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+
+    padding-left: 8rem;
+}
+
+.five_block__input::placeholder {
+    color: var(--main-dark-red);
+
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.five_block__inputBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.five_block__input-container {
+    position: relative;
+
+    width: 290px;
+  }
+  
+  .five_block__input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--main-dark-red);
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+  }
+  
+
+  
+
+  
+  .five_block__input-container .five_block__underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var();
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  
+  .five_block__input-container input[type="text"]:focus ~ .five_block__underline,
+  .five_block__input-container input[type="text"]:valid ~ .five_block__underline {
+    transform: scaleX(1);
+  }
+
+@media screen and (max-width:780px)  {
+    .five_block__preTitle {
+        font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        .five_block__preTitle {
+            font-size: 1.4rem;
+        }
+
+      
+
+    }
 }
 
 /* five block-------------------------------------------------------------- */

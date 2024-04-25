@@ -71,3 +71,12 @@ input {
     max-width: 1440px;
 }
 
+
+.mainPage_title__textBlock {
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    height: 8vh;
+}

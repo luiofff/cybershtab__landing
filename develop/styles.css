@@ -1,0 +1,47 @@
+.develop__block {
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    align-items: center;
+
+
+
+}
+
+.develop__gifBlock {
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+}
+
+.develop__gear {
+    max-width: 80%;
+}
+
+.develop__title {
+    font-size: 3.3rem;
+    font-family: var(--ibm-font);
+    color: var(--main-bright-red);
+}
+
+@media screen and (max-width:780px) {
+    .develop__title {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width:550px) {
+        .develop__title {
+            font-size: 1.7rem;
+        }
+
+        .develop__gear {
+            max-width: 70%;
+        }
+        
+    
+    }
+}

@@ -109,6 +109,12 @@ body::-webkit-scrollbar-thumb {
     padding: 0 4rem;
 }
 
+@media screen and (max-width:500px) {
+	.line {
+		padding: 0 2rem;
+	}
+}
+
 /* lines ------------------------------------------------ */
 
 /* burger menu ------------------------------------------------------------ */

@@ -254,6 +254,8 @@
 }
 
 .four_block__listElem {
+
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     gap: 1rem;

@@ -101,11 +101,16 @@
     }
 
     .set-imgComponent {
-        width: 100%;
+        width: auto;
+        height: auto;
     }
 
     .set__contentComponent__secondPart {
         flex-direction: column-reverse;
+    }
+
+    .set__contentComponent {
+        height: auto;
     }
     
 

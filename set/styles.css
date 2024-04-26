@@ -221,3 +221,7 @@
 
     font-weight: 400;
 }
+
+.set-buy__button:hover {
+    color: var(--main-bright-red);
+}

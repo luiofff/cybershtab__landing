@@ -256,12 +256,12 @@ body::-webkit-scrollbar-thumb {
 
   .navbar__block:nth-child(1) {
       justify-content: start;
-      padding-left: 4rem;
+      padding-left: 2rem;
   }
   
   .navbar__block:nth-child(2) {
       justify-content: end;
-      padding-right: 4rem;
+      padding-right: 2rem;
   }
 
   .navbar__block:nth-child(3) {

@@ -1,0 +1,194 @@
+.calendar-TitleSection {
+    height: 5rem;
+    width: 100%;
+    
+    display: grid;
+    place-items: center;
+}
+
+.calendar-Title {
+    font-family: var(--Onest-font);
+
+    color: var(--main-bright-red);
+    font-size: clamp(1.4rem, 5vw, 2.6rem);
+    font-weight: bold;
+
+
+}
+
+.calendar-contentSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-contentSection__dateBlock {
+    padding-left: 8rem;
+
+    height: 5rem;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.calendar-contentSection__dateText {
+    font-family: var(--ibm-font);
+    font-weight: 400;
+    color: var(--main-bright-red);
+}
+
+.calendar-contentBlock {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 30%);
+
+    justify-items: center;
+    padding: 0 8rem;
+
+    grid-auto-rows: 24rem;
+
+    justify-content: space-between;
+}
+
+
+.calendar-cardBlock {
+    width: 14rem;
+    height: 16rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.calendar-cardTextBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 1rem;
+}
+
+.calendar-cardTitle {
+    color: var(--main-bright-red);
+}
+
+.calendar-cardPreTitle  {
+    color: var(--main-dark-red);
+}
+
+.calendar-img {
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+}
+
+.calendar-card__MenuBlock {
+    width: 100%;
+    height: 100%;
+
+
+
+    z-index: 99;
+
+
+    place-items: center;
+
+    position: absolute;
+}
+
+
+.calendar-cardBlock:hover .calendar-card__MenuBlock {
+    display: grid;
+}
+
+
+.calendar-cardImgBlock {
+    width: 100%;
+    height: 14rem;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+    z-index: 0;
+}
+.calendar-card__Menu {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    position: absolute;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-card__Menu__text {
+    font-family: var(--ibm-font);
+    font-weight: 400;
+    color: var(--main-bright-red);
+
+    text-decoration: none;
+}
+
+.calendar-card__ImgBlockbg {
+    width: 100%;
+    height: 100%;
+    background: #2F040ECC;
+  
+
+    position: absolute;
+}
+
+.calendar-card__text {
+    font-family: var(--ibm-font);
+
+
+
+    font-size: clamp();
+}
+
+@media screen and (max-width:1055px) {
+    
+    .calendar-contentBlock {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:780px) {
+    .calendar-contentSection__dateBlock {
+        padding-left: 4rem;
+    }
+
+
+    .calendar-contentBlock {
+        padding: 0 4rem;
+    }
+    .calendar-contentBlock {
+
+
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media screen and (max-width:500px) {
+        .calendar-contentSection__dateBlock {
+            padding-left: 2rem;
+        }
+
+        .calendar-contentBlock {
+            padding: 0 2rem;
+        }
+    }
+}
+
+

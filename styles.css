@@ -84,6 +84,14 @@
     .first_block__pretitle {
         width: 100%;
     }
+
+    @media screen and (max-width:500px) {
+        .left__side {
+            padding: 0 2rem;
+    
+            width: 100%;
+        }
+    }
 }
 
 /* first block----------------------------------------------------- */
@@ -93,7 +101,7 @@
 /* second block----------------------------------------------------- */
 
 .second_block {
-    padding: 0 4rem;
+    padding: 0 8rem;
 }
 
 .second_block__textBlock {
@@ -127,6 +135,16 @@
 @media screen and (max-width:780px)  {
     .second_block__text {
         width: 90%;
+    }
+
+    .second_block {
+        padding: 0 4rem;
+    } 
+
+    @media screen and (max-width:500px) {
+        .second_block {
+            padding: 0 2rem;
+        } 
     }
 }
 
@@ -295,6 +313,11 @@
         padding: 0 4rem;
     }
     
+    @media screen and (max-width:500px) {
+        .four_block__listSpace {
+            padding: 0 2rem;
+        }
+    }
 }
 
 /* four block-------------------------------------------------------------four
@@ -430,7 +453,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    padding: 0 4rem;
+    padding-left: 8rem;
 
 
 }
@@ -490,6 +513,7 @@
 @media screen and (max-width:780px)  {
     .five_block__form {
         grid-template-columns: repeat(1, 1fr);
+      
     }
 
     #five_block__firstGridComponent {
@@ -498,6 +522,7 @@
         grid-row-start: auto;
         grid-row-end: auto;
         order: auto;
+        width: 100%;
     }
 
     #five_block__secondGridComponent {
@@ -506,6 +531,7 @@
         grid-row-start: auto;
         grid-row-end: auto;
         order: auto;
+        width: 100%;
     }
 
     #five_block__thirdGridComponent {
@@ -524,7 +550,7 @@
 
     
     .five_block__inputBlock {
-        width: 250px;
+        width: 90%;
     }
 
  
@@ -532,7 +558,7 @@
     .five_block__form {
         flex-direction: column;
 
-        padding: 0 2rem;
+        padding: 0 4rem;
 
         gap: 2rem;
 
@@ -540,7 +566,9 @@
     }
 
     @media screen and (max-width: 500px) {
-
+        .five_block__form {
+            padding: 0 2rem;
+        }
         .five_block__preTitle {
             font-size: 1.4rem;
         }

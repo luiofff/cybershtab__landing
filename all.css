@@ -97,9 +97,9 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 
 
-
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -206,7 +206,7 @@ body::-webkit-scrollbar-thumb {
 
 .navbar__block:nth-child(1) {
   justify-content: start;
-  padding-left: 4rem;
+  padding-left: 8rem;
 }
 
 .navbar__block:nth-child(2) {
@@ -215,7 +215,7 @@ body::-webkit-scrollbar-thumb {
 
 .navbar__block:nth-child(3) {
   justify-content: end;
-  padding-right: 4rem;
+  padding-right: 8rem;
 }
 
 .login_btn {
@@ -236,6 +236,19 @@ body::-webkit-scrollbar-thumb {
   color: var(--main-dark-red);
 }
 
+@media screen  and (max-width:780px) {
+  .navbar__block:nth-child(1) {
+    justify-content: start;
+    padding-left: 4rem;
+  }
+
+  
+  .navbar__block:nth-child(3) {
+    justify-content: end;
+    padding-right: 4rem;
+  }
+}
+
 @media screen  and (max-width:550px){
   .login_btn {
       display: none;
@@ -243,12 +256,12 @@ body::-webkit-scrollbar-thumb {
 
   .navbar__block:nth-child(1) {
       justify-content: start;
-      padding-left: 4rem;
+      padding-left: 2rem;
   }
   
   .navbar__block:nth-child(2) {
       justify-content: end;
-      padding-right: 4rem;
+      padding-right: 2rem;
   }
 
   .navbar__block:nth-child(3) {

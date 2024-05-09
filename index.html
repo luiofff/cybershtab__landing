@@ -10,6 +10,10 @@
       name="КИБЕРШТАБ"
       content="Безграничная страсть к страйкболу и стремление к улучшению игрового опыта, привели нас к созданию инновационной системы для проведения страйкбольных игр с возможностью верификации и дистанционного отслеживания статистики. Наша система основана на высокотехнологичных компонентах, которые позволяют игрокам наслаждаться аутентичным страйкболом в самых разных условиях. Она состоит из нескольких ключевых элементов."
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="icon" href="https://cybershtab.ru/assets/favicon.svg" type="image/x-icon">
     <link href="./all.css"  rel="stylesheet" >
     <link href="./styles.css"  rel="stylesheet" >
@@ -198,27 +202,74 @@
                         <path d="M30.5136 1.66V40H23.4396V7.762H7.67163V40H0.651635V1.66H30.5136ZM53.8357 40.864C42.4417 40.864 35.5297 33.25 35.5297 20.884C35.5297 8.41 42.4417 0.795999 53.8357 0.795999C65.2837 0.795999 72.0877 8.41 72.0877 20.884C72.0877 33.25 65.2837 40.864 53.8357 40.864ZM42.8737 20.884C42.8737 29.524 46.9237 34.762 53.8357 34.762C60.7477 34.762 64.8517 29.524 64.8517 20.884C64.8517 12.136 60.7477 6.898 53.8357 6.898C46.9237 6.898 42.8737 12.136 42.8737 20.884ZM109.546 26.608C108.034 35.41 102.31 40.864 93.292 40.864C82.06 40.864 75.148 32.17 75.148 20.884C75.148 9.544 82.006 0.795999 93.292 0.795999C101.878 0.795999 107.656 5.926 109.33 14.404L101.986 14.728C100.96 9.76 97.774 6.898 93.184 6.898C85.732 6.898 82.438 13.108 82.438 20.884C82.438 28.606 85.786 34.762 93.184 34.762C97.99 34.762 101.23 31.684 102.148 26.23L109.546 26.608ZM147.603 1.66V40H140.583V7.762H128.379L126.273 31.144C125.787 36.544 123.141 40 117.957 40H112.989V33.898H116.121C118.119 33.898 119.199 32.386 119.415 29.956L121.899 1.66H147.603ZM153.957 1.66H179.769V7.762H160.977V17.752H179.121V23.8H160.977V33.898H180.201V40H153.957V1.66ZM219.093 1.66V33.898H223.845V48.1H216.771V40H190.959V48.1H183.939V33.898H185.775C188.583 33.898 190.203 31.522 190.743 26.77L193.551 1.66H219.093ZM195.657 33.898H212.019V7.762H199.977L197.817 27.31C197.493 30.172 196.791 32.332 195.657 33.898ZM228.342 40V1.66H235.362V17.644H251.184V1.66H258.204V40H251.184V23.746H235.362V40H228.342ZM296.122 1.66V40H289.102V12.298L273.01 40H264.532V1.66H271.606V30.118L287.914 1.66H296.122ZM302.463 1.66H328.275V7.762H309.483V17.752H327.627V23.8H309.483V33.898H328.707V40H302.463V1.66ZM360.057 1.66C369.021 1.66 374.367 6.25 374.367 13.864C374.367 21.532 369.021 26.176 360.057 26.176H352.227V40H345.207V1.66H360.057ZM352.227 20.074H359.733C364.485 20.074 367.131 17.968 367.131 13.864C367.131 9.868 364.539 7.762 359.733 7.762H352.227V20.074ZM379.447 1.66H405.259V7.762H386.467V17.752H404.611V23.8H386.467V33.898H405.691V40H379.447V1.66ZM444.314 1.66V40H437.294V7.762H425.09L422.984 31.144C422.498 36.544 419.852 40 414.668 40H409.7V33.898H412.832C414.83 33.898 415.91 32.386 416.126 29.956L418.61 1.66H444.314ZM482.258 1.66V40H475.238V12.298L459.146 40H450.668V1.66H457.742V30.118L474.05 1.66H482.258ZM503.864 17.05C506.996 17.104 510.398 15.592 510.398 11.542C510.398 8.68 507.59 6.898 503.108 6.898C498.896 6.898 496.088 8.572 495.71 11.218L488.582 10.786C489.284 4.846 495.17 0.795999 503.216 0.795999C511.856 0.795999 517.634 4.792 517.634 10.786C517.634 15.106 514.988 18.022 509.966 19.264C515.744 20.668 518.93 24.34 518.93 29.47C518.93 36.274 512.612 40.864 503.216 40.864C494.198 40.864 487.88 36.166 487.502 29.2L494.684 28.876C495.008 32.494 498.356 34.762 503.27 34.762C508.454 34.762 511.694 32.278 511.694 28.498C511.694 24.178 507.806 22.234 503.864 22.288L499.922 22.342V16.996L503.864 17.05ZM539.059 40H524.209V1.66H531.229V15.484H539.059C548.023 15.484 553.369 20.128 553.369 27.796C553.369 35.41 548.023 40 539.059 40ZM531.229 33.898H538.735C543.541 33.898 546.133 31.792 546.133 27.796C546.133 23.692 543.487 21.586 538.735 21.586H531.229V33.898ZM557.311 40V1.66H564.331V40H557.311Z" fill="#FF504E"/>
                     </svg>
                 </div>
-                <div class="four_block__listSpace">
-                    <a href="/develop" class="four_block__listElem">
-                        <span class="four_block__listElem_date">14/01/24</span>
-                        <h1 class="four_block__listElem_newsTitle">КИБЕРШТАБ v.1.0 // Первый запуск в реальных условиях</h1>
-                    </a>
-                    <a href="/develop" class="four_block__listElem">
-                        <span class="four_block__listElem_date">07/03/2024</span>
-                        <h1 class="four_block__listElem_newsTitle">Запуск основного сайта // Подробное описание игрового комплекта на странице</h1>
-                    </a>
-                    <a href="/develop" class="four_block__listElem">
-                        <span class="four_block__listElem_date">17/04/2024</span>
-                        <h1 class="four_block__listElem_newsTitle">КИБЕРШТАБ v.1.1 // Добавлен режим “Захват флага”</h1>
-                    </a>
-                    <a href="/develop" class="four_block__listElem">
-                        <span class="four_block__listElem_date">21/04/2024</span>
-                        <h1 class="four_block__listElem_newsTitle">Провдена тестовая эксплотация// Тестовая эксплотация в боевых условиях</h1>
-                    </a>
-                    
-                </div>
+               
 
-                <div style="width: 100%; display: grid; place-items: center; height: 10vh;">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="four_block__listSpace">
+                                <a href="/news/news1" class="four_block__listElem">
+                                    <span class="four_block__listElem_date">14/01/24</span>
+                                    <h1 class="four_block__listElem_newsTitle">Хакатон по разработке электронных устройств для страйкбола "Возрождение"</h1>
+                                </a>
+                                <a href="/develop" class="four_block__listElem">
+                                    <span class="four_block__listElem_date">07/02/2024</span>
+                                    <h1 class="four_block__listElem_newsTitle">Команда Киберштаба</h1>
+                                </a>
+                                <a href="/develop" class="four_block__listElem">
+                                    <span class="four_block__listElem_date">21/02/2024</span>
+                                    <h1 class="four_block__listElem_newsTitle">Партнеры Киберштаба</h1>
+                                </a>
+                                <a href="/develop" class="four_block__listElem">
+                                    <span class="four_block__listElem_date">26/02/2024</span>
+                                    <h1 class="four_block__listElem_newsTitle">Первая версия базовой станции Киберштаба</h1>
+                                </a>
+                            </div>                      
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="four_block__listSpace">
+                                <a href="/develop" class="four_block__listElem">
+                                    <span class="four_block__listElem_date">12/03/24</span>
+                                    <h1 class="four_block__listElem_newsTitle">Доработка устройства базовой станции Киберштаба</h1>
+                                </a>
+                                <a href="/develop" class="four_block__listElem">
+                                    <span class="four_block__listElem_date">19/03/2024</span>
+                                    <h1 class="four_block__listElem_newsTitle">Мобильное приложение Киберштаба</h1>
+                                </a>
+                                <a href="/develop" class="four_block__listElem">
+                                    <span class="four_block__listElem_date">22/03/2024</span>
+                                    <h1 class="four_block__listElem_newsTitle">Первая тестовая эксплуатация</h1>
+                                </a>
+                                <a href="/develop" class="four_block__listElem">
+                                    <span class="four_block__listElem_date">25/03/2024</span>
+                                    <h1 class="four_block__listElem_newsTitle">Поиск партнеров для тестовой эксплуатации нашей системы</h1>
+                                </a>
+                            </div>                      
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="four_block__listSpace">
+                                <a href="/develop" class="four_block__listElem">
+                                    <span class="four_block__listElem_date">11/05/24</span>
+                                    <h1 class="four_block__listElem_newsTitle">Киберштаб на Страйкфест</h1>
+                                </a>
+                            </div>                      
+                        </div>
+                      
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination">
+                        <div class="swiper__pages-block">
+                            <a type="button" class="swiper__button" onclick="gotoSlide(0)">1</button>
+                            <a type="button" class="swiper__button" onclick="gotoSlide(1)">2</button>
+                            <a type="button" class="swiper__button" onclick="gotoSlide(2)">3</button>
+                        </div>
+                    </div>
+
+                <div style="width: 100%; display: grid; place-items: center; height: 10rem;">
                     <a class="lastBtn__href" href="/">ПОСМОТРЕТЬ ВСЕ</a>
                 </div>
 
@@ -398,6 +449,7 @@
 
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/index.js"></script>
 </body>
 </html>

@@ -510,6 +510,39 @@
     background-color: var(--main-dark-red);
 }
 
+
+/* swiper ----------------------------------------------------*/
+
+.swiper-pagination {
+    width: 100%;
+    height: 5rem;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.swiper__pages-block {
+    display: flex;
+    gap: 1rem;
+
+    margin-right: 8rem;
+}
+
+.swiper__button {
+    border: none;
+    background-color: none;
+
+    color: var(--main-bright-red);
+    font-family: var(--ibm-font);
+
+    text-decoration: underline;
+}
+
+
+/* swiper ----------------------------------------------------*/
+
 @media screen and (max-width:780px)  {
     .five_block__form {
         grid-template-columns: repeat(1, 1fr);
@@ -546,8 +579,11 @@
         font-size: 1.6rem;
     }
 
+    .swiper__pages-block {
 
-
+    
+        margin-right: 4rem;
+    }
     
     .five_block__inputBlock {
         width: 90%;
@@ -566,6 +602,11 @@
     }
 
     @media screen and (max-width: 500px) {
+        .swiper__pages-block {
+
+    
+            margin-right: 2rem;
+        }
         .five_block__form {
             padding: 0 2rem;
         }
@@ -611,5 +652,9 @@
 }
 
 /* five block-------------------------------------------------------------- */
+
+
+
+
 
 

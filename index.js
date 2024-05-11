@@ -1,16 +1,45 @@
-document.getElementById('selectAllCheckbox').addEventListener('change', function() {
-    var checkboxes = document.getElementsByClassName('input__who');
-    for(var i=0; i<checkboxes.length; i++) {
-        checkboxes[i].checked = this.checked;
-    }
+// document.getElementById('selectAllCheckbox').addEventListener('change', function() {
+//     var checkboxes = document.getElementsByClassName('input__who');
+//     for(var i=0; i<checkboxes.length; i++) {
+//         checkboxes[i].checked = this.checked;
+//     }
+// });
+
+// document.getElementById('selectAllCheckboxTopic').addEventListener('change', function() {
+//     var checkboxes = document.getElementsByClassName('input__topic');
+//     for(var i=0; i<checkboxes.length; i++) {
+//         checkboxes[i].checked = this.checked;
+//     }
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const checkboxes = document.querySelectorAll('.input__who');
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      checkboxes.forEach(input => {
+        if(input !== this) {
+          input.checked = false;
+        }
+      });
+    });
+  });
 });
 
-document.getElementById('selectAllCheckboxTopic').addEventListener('change', function() {
-    var checkboxes = document.getElementsByClassName('input__topic');
-    for(var i=0; i<checkboxes.length; i++) {
-        checkboxes[i].checked = this.checked;
-    }
+document.addEventListener("DOMContentLoaded", function() {
+  const checkboxes = document.querySelectorAll('.input__topic');
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      checkboxes.forEach(input => {
+        if(input !== this) {
+          input.checked = false;
+        }
+      });
+    });
+  });
 });
+
 
 
 const swiper = new Swiper(".swiper", {

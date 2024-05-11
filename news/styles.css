@@ -35,10 +35,10 @@
 
 
 .news-mediaContent__block {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
 
-    justify-items: center;
+    gap: 4rem;
 }
 
 .news-mediaBlock {
@@ -79,9 +79,11 @@
 
 @media screen and (max-width:920px) {
     .news-mediaContent__block {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-
+        align-items: center;
         gap: 4rem;
+        justify-items: center;
     }
 }
 

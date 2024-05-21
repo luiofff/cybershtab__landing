@@ -12,19 +12,87 @@
 //     }
 // });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const checkboxes = document.querySelectorAll('.input__who');
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('form');
+  let who, topic; 
+  let checkboxes_who = document.querySelectorAll('.input__who'); 
+  let checkboxes_topic = document.querySelectorAll('.input__topic'); 
 
-  checkboxes.forEach(checkbox => {
+  checkboxes_who.forEach((checkbox, index) => {
     checkbox.addEventListener('change', function() {
-      checkboxes.forEach(input => {
+      checkboxes_who.forEach((input, i) => {
         if(input !== this) {
           input.checked = false;
         }
       });
+
+      who = index;
     });
   });
+
+  checkboxes_who.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      if(this.checked) {
+        who = this.closest('.five_block__checkBox_label').querySelector('.five_block__textCheckBox').innerText;
+      }
+    });
+  });
+
+  checkboxes_topic.forEach((checkbox, index) => {
+    checkbox.addEventListener('change', function() {
+      checkboxes_topic.forEach((input, i) => {
+        if(input !== this) {
+          input.checked = false;
+        }
+      });
+
+      topic = index;
+    });
+  });
+
+  checkboxes_topic.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      if(this.checked) {
+        topic = this.closest('.five_block__checkBox_label').querySelector('.five_block__textCheckBox').innerText;
+      }
+    });
+  });
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault(); 
+    const formData = new FormData(form);
+    const email = formData.get('email');
+    const name = formData.get('name');
+    const more = formData.get("more");
+
+    try {
+      const response = await fetch('https://cybershtab.ru/api/sendFormData', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ email, name, topic,who, more })
+      });
+
+      if (response.ok) {
+        
+  
+      } else {
+          console.log('Failed to add data. Please try again later.');
+      }
+      
+    } catch (error) {
+        console.error('Error:', error);
+    }
+    form.reset(); 
+    window.location.reload();
+  });
 });
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
   const checkboxes = document.querySelectorAll('.input__topic');

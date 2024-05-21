@@ -172,7 +172,7 @@
                             </div>
                         </div>    
                     </a>
-                    <a href="/set" style="text-decoration: none;" class="third_block__card">
+                    <a href="http://194.226.199.230:26108" style="text-decoration: none;" class="third_block__card">
                         <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
                             
                             <svg class="third_block__cardImg" viewBox="0 0 151 152" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -271,108 +271,111 @@
                 <div class="mainPage_title__textBlock" style="margin-bottom: 2rem;"> 
                     <h1 class="five_block__preTitle">СВЯЖИТЕСЬ С НАМИ</h1>
                 </div>
-                
-                <form class="five_block__form" action="">
-                    <div id="five_block__firstGridComponent" class="five_block__Side_InputsSpace">
-                        <div class="five_block__inputBlock">
-                            <h1 class="five_block__preTitle ">Почта</h1>
+                <form id="form" action="">
+                    <div class="five_block__form" action="">
+                        <div id="five_block__firstGridComponent" class="five_block__Side_InputsSpace">
+                            <div class="five_block__inputBlock">
+                                <h1 class="five_block__preTitle ">Почта</h1>
+                                <div style="display: flex; flex-direction: column; gap: .5rem;">
+                                    <input type="text" class="five_block__input" required="" name="email" placeholder="pochta@mail.com"> 
+                                    <div class="five_block__inputComponent_undeline"></div>
+                                </div>
+                            </div>
+                            <div class="five_block__inputBlock">
+                                <h1 class="five_block__preTitle ">Тема обращения</h1>
+                                <div class="five_block__checkBoxForm">
+                                    <label class="five_block__checkBox_label">
+                                        <div>
+                                            <input type="checkbox" class="input input__topic">
+                                            <span class="custom-checkbox"></span>
+                                        </div>
+                                        <span class="five_block__textCheckBox">СОТРУДНИЧЕСТВО</span>
+                                    </label>
+                                    <label class="five_block__checkBox_label">
+                                        <div>
+                                            <input type="checkbox" class="input input__topic">
+                                            <span class="custom-checkbox"></span>
+                                        </div>
+                                        <span class="five_block__textCheckBox">ПРОДУКЦИЯ</span>
+                                    </label>
+                                    <label class="five_block__checkBox_label">
+                                        <div>
+                                            <input type="checkbox" class="input input__topic">
+                                            <span class="custom-checkbox"></span>
+                                        </div>
+                                        <span class="five_block__textCheckBox">ПРЕДЛОЖЕНИЯ ПО ФУНКЦИОНАЛУ</span>
+                                    </label>
+                                    <label class="five_block__checkBox_label">
+                                        <div>
+                                            <input type="checkbox" class="input input__topic">
+                                            <span class="custom-checkbox"></span>
+                                        </div>
+                                        <span class="five_block__textCheckBox">ДРУГОЕ</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="five_block__secondGridComponent" class="five_block__Side_InputsSpace">
+                            <div class="five_block__inputBlock">
+                                <h1 class="five_block__preTitle ">Имя</h1>
+                                <div style="display: flex; flex-direction: column; gap: .5rem;">
+                                    <input type="text" class="five_block__input" name="name" required="" placeholder="Как к вам обращаться?"> 
+                                    <div class="five_block__inputComponent_undeline"></div>
+                                </div>
+                            </div>
+                            <div class="five_block__inputBlock">
+                                <h1 class="five_block__preTitle ">Кто вы?</h1>
+                                <div class="five_block__checkBoxForm">
+                                    <label class="five_block__checkBox_label">
+                                        <div>
+                                            <input type="checkbox" class="input input__who">
+                                            <span class="custom-checkbox"></span>
+                                        </div>
+                                        <span class="five_block__textCheckBox">ОРГАНИЗАЦИЯ</span>
+                                    </label>
+                                    <label class="five_block__checkBox_label">
+                                        <div>
+                                            <input type="checkbox" class="input input__who">
+                                            <span class="custom-checkbox"></span>
+                                        </div>
+                                        <span class="five_block__textCheckBox">ФИЗИЧЕСКОЕ ЛИЦО</span>
+                                    </label>
+                                    <label class="five_block__checkBox_label">
+                                        <div>
+                                            <input type="checkbox" class="input input__who">
+                                            <span class="custom-checkbox"></span>
+                                        </div>
+                                        <span class="five_block__textCheckBox">СПОРТИВНОЕ ОБЪЕДИНЕНИЕ</span>
+                                    </label>
+                                    <label class="five_block__checkBox_label">
+                                        <div>
+                                            <input type="checkbox" class="input input__who">
+                                            <span class="custom-checkbox"></span>
+                                        </div>
+                                        <span class="five_block__textCheckBox">ГОСУДАРСТВЕННАЯ СТРУКТУРА</span>
+                                    </label>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div id="five_block__thirdGridComponent" class="five_block__inputBlock">
+                            <h1 class="five_block__preTitle ">Дополнительно</h1>
                             <div style="display: flex; flex-direction: column; gap: .5rem;">
-                                <input type="text" class="five_block__input" required="" placeholder="pochta@mail.com"> 
+                                <input type="text" class="five_block__input"  name="more" required="" placeholder="Расскажите подробнее о том, что вас интересует "> 
                                 <div class="five_block__inputComponent_undeline"></div>
                             </div>
                         </div>
-                        <div class="five_block__inputBlock">
-                            <h1 class="five_block__preTitle ">Тема обращения</h1>
-                            <div class="five_block__checkBoxForm">
-                                <label class="five_block__checkBox_label">
-                                    <div>
-                                        <input type="checkbox" class="input input__topic">
-                                        <span class="custom-checkbox"></span>
-                                    </div>
-                                    <span class="five_block__textCheckBox">СОТРУДНИЧЕСТВО</span>
-                                </label>
-                                <label class="five_block__checkBox_label">
-                                    <div>
-                                        <input type="checkbox" class="input input__topic">
-                                        <span class="custom-checkbox"></span>
-                                    </div>
-                                    <span class="five_block__textCheckBox">ПРОДУКЦИЯ</span>
-                                </label>
-                                <label class="five_block__checkBox_label">
-                                    <div>
-                                        <input type="checkbox" class="input input__topic">
-                                        <span class="custom-checkbox"></span>
-                                    </div>
-                                    <span class="five_block__textCheckBox">ПРЕДЛОЖЕНИЯ ПО ФУНКЦИОНАЛУ</span>
-                                </label>
-                                <label class="five_block__checkBox_label">
-                                    <div>
-                                        <input type="checkbox" class="input input__topic">
-                                        <span class="custom-checkbox"></span>
-                                    </div>
-                                    <span class="five_block__textCheckBox">ДРУГОЕ</span>
-                                </label>
-                            </div>
-                        </div>
+                        
                     </div>
-
-                    <div id="five_block__secondGridComponent" class="five_block__Side_InputsSpace">
-                        <div class="five_block__inputBlock">
-                            <h1 class="five_block__preTitle ">Имя</h1>
-                            <div style="display: flex; flex-direction: column; gap: .5rem;">
-                                <input type="text" class="five_block__input" required="" placeholder="Как к вам обращаться?"> 
-                                <div class="five_block__inputComponent_undeline"></div>
-                            </div>
-                        </div>
-                        <div class="five_block__inputBlock">
-                            <h1 class="five_block__preTitle ">Кто вы?</h1>
-                            <div class="five_block__checkBoxForm">
-                                <label class="five_block__checkBox_label">
-                                    <div>
-                                        <input type="checkbox" class="input input__who">
-                                        <span class="custom-checkbox"></span>
-                                    </div>
-                                    <span class="five_block__textCheckBox">ОРГАНИЗАЦИЯ</span>
-                                </label>
-                                <label class="five_block__checkBox_label">
-                                    <div>
-                                        <input type="checkbox" class="input input__who">
-                                        <span class="custom-checkbox"></span>
-                                    </div>
-                                    <span class="five_block__textCheckBox">ФИЗИЧЕСКОЕ ЛИЦО</span>
-                                </label>
-                                <label class="five_block__checkBox_label">
-                                    <div>
-                                        <input type="checkbox" class="input input__who">
-                                        <span class="custom-checkbox"></span>
-                                    </div>
-                                    <span class="five_block__textCheckBox">СПОРТИВНОЕ ОБЪЕДИНЕНИЕ</span>
-                                </label>
-                                <label class="five_block__checkBox_label">
-                                    <div>
-                                        <input type="checkbox" class="input input__who">
-                                        <span class="custom-checkbox"></span>
-                                    </div>
-                                    <span class="five_block__textCheckBox">ГОСУДАРСТВЕННАЯ СТРУКТУРА</span>
-                                </label>
-                                    
-                            </div>
-                        </div>
-                    </div>
-                    <div id="five_block__thirdGridComponent" class="five_block__inputBlock">
-                        <h1 class="five_block__preTitle ">Дополнительно</h1>
-                        <div style="display: flex; flex-direction: column; gap: .5rem;">
-                            <input type="text" class="five_block__input" required="" placeholder="Расскажите подробнее о том, что вас интересует "> 
-                            <div class="five_block__inputComponent_undeline"></div>
-                        </div>
+                    <div class="five_block__buttonBlock">
+                        <button type="submit" class="five_block__button">
+                            Отправить
+                        </button>
                     </div>
                 </form>
                 
-                <div class="five_block__buttonBlock">
-                    <button class="five_block__button">
-                        Отправить
-                    </button>
-                </div>
+              
 
             </section>
 

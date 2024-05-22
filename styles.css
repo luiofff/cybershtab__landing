@@ -367,6 +367,15 @@
 
 }
 
+.five_block__input:auto-fill {
+    color: var(--main-bright-red);
+
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    font-family: var(--ibm-font);
+}
+
 .five_block__inputComponent_undeline {
     width: 100%;
     height: 2px;

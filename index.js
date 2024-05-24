@@ -12,9 +12,7 @@
 //     }
 // });
 
-const sendForm = async () => {
-  
-}
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('form');
@@ -70,13 +68,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const more = formData.get("more");
 
     try {
-      await fetch('https://cybershtab.ru/api/sendFormData', {
+      if ((topic !== undefined && who !== undefined) && (topic !== 0 || who !== 0) )   {
+        await fetch('https://cybershtab.ru/api/sendFormData', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
           },
           body: JSON.stringify({ email, name, topic,who, more })
-      }).then(form.reset()).then(window.location.reload());
+        })
+      } else {
+        alert("Ne vse vibrano")
+      }
+      
 
       if (response.ok) {
         

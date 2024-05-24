@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let who, topic; 
   let checkboxes_who = document.querySelectorAll('.input__who'); 
   let checkboxes_topic = document.querySelectorAll('.input__topic'); 
+  let check_text = document.querySelectorAll(".five_block__textCheckBox");
 
   checkboxes_who.forEach((checkbox, index) => {
     checkbox.addEventListener('change', function() {
@@ -77,7 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
           body: JSON.stringify({ email, name, topic,who, more })
         })
       } else {
-        alert("Ne vse vibrano")
+        check_text.forEach(element => {
+          element.style.color = "rgb(152, 24, 24)";
+        });
+        
       }
       
 

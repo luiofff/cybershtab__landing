@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
               'Content-Type': 'application/json'
           },
           body: JSON.stringify({ email, name, topic,who, more })
-        })
+        }).then(window.location.reload())
       } else {
         check_text.forEach(element => {
           element.style.color = "rgb(152, 24, 24)";

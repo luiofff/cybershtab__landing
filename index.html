@@ -14,6 +14,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+
+    <script>
+        var onSubmit = function(token) {
+          console.log('success!');
+        };
+
+        var onloadCallback = function() {
+          grecaptcha.render('submit', {
+            'sitekey' : '6LenJfYpAAAAAB76tn5Qe5CMoMLss4GDJ-GW26Ku',
+            'callback' : onSubmit
+          });
+        };
+    </script>
+  
     <link rel="icon" href="https://cybershtab.ru/assets/favicon.svg" type="image/x-icon">
     <link href="./all.css"  rel="stylesheet" >
     <link href="./styles.css"  rel="stylesheet" >
@@ -271,7 +285,7 @@
                 <div class="mainPage_title__textBlock" style="margin-bottom: 2rem;"> 
                     <h1 class="five_block__preTitle">СВЯЖИТЕСЬ С НАМИ</h1>
                 </div>
-                <form id="form" action="">
+                <form id="form" action="?" method="POST">
                     <div class="five_block__form" action="">
                         <div id="five_block__firstGridComponent" class="five_block__Side_InputsSpace">
                             <div class="five_block__inputBlock">
@@ -368,10 +382,13 @@
                         </div>
                         
                     </div>
-                    <div class="five_block__buttonBlock">
-                        <button type="submit" class="five_block__button">
+                    <div class="five_block__buttonBlock g-recaptcha">
+                        <button type="submit" class="five_block__button" value="Submit" id="submit">
                             Отправить
                         </button>
+                        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                            async defer>
+                        </script>
                     </div>
                 </form>
                 
@@ -421,5 +438,11 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/index.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("form").submit();
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
 </html>

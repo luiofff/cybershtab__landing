@@ -69,20 +69,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const more = formData.get("more");
 
     try {
-      if ((topic !== undefined && who !== undefined) && (topic !== 0 || who !== 0) )   {
-        await fetch('https://cybershtab.ru/api/sendFormData', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ email, name, topic,who, more })
-        }).then(window.location.reload())
-      } else {
-        check_text.forEach(element => {
-          element.style.color = "rgb(152, 24, 24)";
-        });
+      // if ((topic !== undefined && who !== undefined) && (topic !== 0 || who !== 0) )   {
+      //   await fetch('https://cybershtab.ru/api/sendFormData', {
+      //     method: 'POST',
+      //     headers: {
+      //         'Content-Type': 'application/json'
+      //     },
+      //     body: JSON.stringify({ email, name, topic,who, more })
+      //   }).then(window.location.reload())
+      // } else {
+      //   check_text.forEach(element => {
+      //     element.style.color = "rgb(152, 24, 24)";
+      //   });
         
-      }
+      // }
       
 
       if (response.ok) {

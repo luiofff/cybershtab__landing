@@ -305,11 +305,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
+
 .footer_block_topPart__rightSide {
+
   display: flex;
   gap: 7rem;
-  justify-content: space-around;
-
 }
 
 .footer__colTitle {

@@ -1,0 +1,114 @@
+.authPage-base {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    flex-direction: column;
+
+    gap: 6rem;
+
+    padding-top: 5rem;
+    padding: 0 8rem;
+    box-sizing: border-box;
+}
+
+.news-TitleSection {
+    height: 5rem;
+    width: 100%;
+    
+    display: grid;
+    place-items: center;
+}
+
+.news-Title {
+    font-family: var(--Onest-font);
+
+    color: var(--main-bright-red);
+    font-size: clamp(1.4rem, 5vw, 2.6rem);
+    font-weight: bold;
+}
+
+.five_block__input::placeholder {
+    color: var(--main-dark-red);
+
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    font-family: var(--ibm-font);
+}
+
+.five_block__input {
+    width: 100%;
+    color: var(--main-bright-red);
+
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    font-family: var(--ibm-font);
+
+}
+
+.five_block__input:auto-fill {
+    color: var(--main-bright-red);
+
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    font-family: var(--ibm-font);
+}
+
+.five_block__inputBlock {
+    width: 40%;
+    border-bottom: 2px solid #8A2C30;
+}
+
+.five_block__buttonBlock {
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    height: 20vh;
+}
+
+.five_block__button {
+    background: var(--main-bright-red);
+    color: #111;
+    font-size: 1.7rem;
+    font-family: var(--ibm-font);
+    font-weight: bolder;
+    width: 14rem;
+    height: 5rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 15%, 100% 85%, 100% 100%, 9.8% 100%, 0% 74.5%, 0% 15%);
+    border: none;
+}
+
+
+.five_block__button:hover {
+    background-color: var(--main-dark-red);
+}
+
+
+.regTitle {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    color: #FF504E;
+    font-size: 1.7rem;
+    font-family: var(--ibm-font);
+    font-weight: 400;
+}
+
+.regBlock {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    flex-direction: column;
+
+    gap: 3rem;
+
+    padding-top: 5rem;
+    padding: 0 8rem;
+    box-sizing: border-box;
+}
